@@ -1,0 +1,28 @@
+seed: 42
+
+data:
+  img_size: 256
+  data_dir: ./dataset
+  # Options: Kvasir-SEG | CVC-ClinicDB | ETIS-LaribPoly
+  dataset: Kvasir-SEG
+
+model:
+  encoder_name: resnet34
+  encoder_weights: imagenet   # set to null to train from scratch
+  in_channels: 3
+  num_classes: 1
+  use_edge_guided: true
+  use_dual_attention: true
+  use_feature_transformer: true
+
+training:
+  batch_size: 16
+  epochs: 100
+  learning_rate: 1.0e-4
+  early_stopping_patience: 15
+  edge_loss_weight: 0.5
+  grad_clip_norm: 1.0
+
+paths:
+  checkpoint_dir: ./checkpoints
+  results_dir: ./results
