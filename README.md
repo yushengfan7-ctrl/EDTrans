@@ -99,3 +99,40 @@ python inference.py \
   --checkpoint checkpoints/best_model.pth \
   --output prediction.png
 ```
+## ⚠️ Important Notice
+
+This repository contains the official PyTorch implementation directly 
+associated with our manuscript currently **under review at The Visual 
+Computer (Springer Nature)**:
+
+> **"Boundary-Guided Hybrid CNN-Transformer Architecture for Robust 
+Medical Image Segmentation"**
+
+The code, models, and benchmarks in this repository are provided 
+specifically to support reproducibility of the experiments reported 
+in the above manuscript.
+
+---
+
+## 📜 Citation Request
+
+If you use this code, the trained models, or any derived artifacts 
+in your research, please **cite our manuscript** to acknowledge this 
+work:
+
+```bibtex
+@article{edtrans2026,
+  title={Boundary-Guided Hybrid CNN-Transformer Architecture for 
+         Robust Medical Image Segmentation},
+  author={Fan, Yusheng and Yan, Shaoliang and Shi, Jianfeng and 
+          Ying, Xuqing and Lu, Xufeng and Fu, Kaiye and Shen, Zhifa 
+          and Zhang, Xin and Guo, Ganhua and Ru, Jiaxi},
+  journal={The Visual Computer},
+  year={2026},
+  note={Manuscript under review}
+}
+```
+
+Citation details will be updated upon publication.
+
+---
